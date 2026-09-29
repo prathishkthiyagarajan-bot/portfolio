@@ -1,0 +1,112 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  background: linear-gradient(to right, #f9f9f9, #e0e0e0);
+  transition: background 0.3s, color 0.3s;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  background: #333;
+  color: #fff;
+}
+
+.profile-pic {
+  width: 120px;
+  border-radius: 50%;
+}
+
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  background: #444;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.sticky-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.sticky-nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.sticky-nav a:hover {
+  color: #ff9800;
+}
+
+/* Sections */
+section {
+  padding: 2rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #333;
+  padding: 0.5rem;
+}
+
+/* Skills */
+.progress {
+  background: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.progress-bar {
+  height: 20px;
+  background: linear-gradient(to right, #080bbb, #ca430d);
+  animation: grow 2s ease-out;
+}
+
+@keyframes grow {
+  from { width: 0; }
+}
+
+/* Contact Form */
+form input, form textarea, form button {
+  display: block;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #222;
+  color: #fff;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background: #121212;
+  color: #e0e0e0;
+}
+
+.dark-mode header, .dark-mode footer, .dark-mode nav {
+  background: #1f1f1f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sticky-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
