@@ -1,140 +1,456 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PRANITHI K</title>
-  <link rel="stylesheet" href="profile.css">
+  <meta name="description" content="Portfolio of Prathishk Thiyagarajan, B.Tech Information Technology student and aspiring developer.">
+  <meta name="theme-color" content="#f5f8ff">
+  <title>Prathishk Thiyagarajan | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-
-  <!-- Header -->
-  <header>
-    <img src="https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg" alt="Profile Photo" class="profile-pic">
-    <h1>PRANITHI K</h1>
-    <p>IT department| cyber security | 1110</p>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="#home">PT<span>.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="navLinks">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#research" class="nav-link">Research</a></li>
+        <li><a href="#contact" class="nav-link nav-contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Navigation -->
-  <nav class="sticky-nav">
-    <ul>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#skills">Technical Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#certifications">Certifications</a></li>
-      <li><a href="#achievements">Achievements</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <button id="dark-mode-toggle">🌙</button>
-  </nav>
-
-  <!-- About Me -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>IAM PRANITHI IAM FORM TIRUPPUR </p>
-    <video controls width="400">
-      <source src="<iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </section>
-
-  <!-- Education -->
-  <section id="education">
-    <h2>Education</h2>
-    <table>
-      <tr><th>Degree</th><th>Institution</th><th>Year</th></tr>
-      <tr><td>B.Tech - INFORMATION TRCHNOLGY</td><td>VCET</td><td>2026</td></tr>
-      <tr><td>High School</td><td>JAI SHREE RAM</td><td>2024</td></tr>
-    </table>
-  </section>
-
-  <!-- Technical Skills -->
-  <section id="skills">
-    <h2>java</h2>
-    <div class="skill">
-      <p>ux/ui</p>
-      <div class="progress"><div class="progress-bar" style="width:90%"></div></div>
-    </div>
-    <div class="skill">
-      <p>java</p>
-      <div class="progress"><div class="progress-bar" style="width:85%"></div></div>
-    </div>
-    <div class="skill">
-      <p>JavaScript</p>
-      <div class="progress"><div class="progress-bar" style="width:80%"></div></div>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><a href="#">https://in.linkedin.com/</a> – A responsive recruiter-friendly portfolio.</li>
-      <li><a href="#">https://code.visualstudio.com/</a> – Built with React and Node.js.</li>
-    </ul>
-  </section>
-
-  <!-- Certifications -->
-  <section id="certifications">
-    <h2>Certifications</h2>
-    <ol>
-      <li> nptel certificate</li>
-      <li>cyber security certificate</li>
-    </ol>
-  </section>
-
-  <!-- Achievements -->
-  <section id="achievements">
-    <h2>Achievements</h2>
-    <ul>
-      <li>completed hackrank</li>
-      <li>published 4 research paper</li>
-      <li>completed full sack web development</li>
-    </ul>
-  </section>
-
-  <!-- Contact -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-
-        <form>
-
-            <label>Name:</label>
-            <input type="text" required>
-
-            <label>Email:</label>
-            <input type="email" required>
-
-            <label>Gender:</label>
-
-            <input type="radio" name="gender">Male
-            <input type="radio" name="gender">Female
-
-            <br><br>
-
-            <label>Skills Interested:</label>
-
-            <input type="checkbox">AI
-            <input type="checkbox">Web Dev
-            <input type="checkbox">IoT
-
-            <br><br>
-
-            <textarea rows="5" cols="40"
-                placeholder="Enter Message">
-            </textarea>
-
-            <br><br>
-
-            <input type="submit" value="Send">
-        </form>
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="status-dot"></span> OPEN TO LEARNING & OPPORTUNITIES</span>
+          <h1>Hi, I'm <span class="text-blue">Prathishk<br class="desktop-break"> Thiyagarajan.</span></h1>
+          <h2 class="hero-role">I'm a <span id="typingText">B.Tech IT Student</span><span class="typing-cursor">|</span></h2>
+          <p class="hero-description">A technology enthusiast passionate about programming, web development, and intelligent solutions. I enjoy turning ideas into practical projects while continuously building my technical skills.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore my work <i class="fa-solid fa-arrow-right"></i></a>
+            <a class="button button-secondary" href="#contact">Get in touch</a>
+          </div>
+          <div class="social-links" aria-label="Social links">
+            <a href="https://github.com/prathishkthiyagarajan-bot" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/prathishk-thiyagarajan-626147322/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:prathishkthiyagarajan@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Decorative initials PT">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="initials-card">
+            <span class="initials">PT</span>
+            <span class="initials-caption">BUILD · LEARN · CREATE</span>
+          </div>
+          <span class="floating-chip chip-code"><i class="fa-solid fa-code"></i> Developer</span>
+          <span class="floating-chip chip-idea"><i class="fa-regular fa-lightbulb"></i> Curious mind</span>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#about"><span></span> Scroll to explore</a>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 Menaka Murugesan</p>
-    </footer>
+    <section class="section section-soft" id="about">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">GET TO KNOW ME</span>
+          <h2>About <span class="text-blue">Me</span></h2>
+          <p>A little introduction and what motivates me.</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-copy">
+            <h3>Learning today. Building for tomorrow.</h3>
+            <p>I'm Prathishk Thiyagarajan, a B.Tech Information Technology student at Velalar College of Engineering and Technology, Thindal, Erode.</p>
+            <p>I'm interested in software development, web technologies, databases, machine learning, and cybersecurity. I enjoy learning by building projects and strengthening my problem-solving and programming fundamentals.</p>
+            <a class="text-link" href="#contact">Let's connect <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+          <div class="quick-facts">
+            <article class="fact-card"><span class="fact-icon"><i class="fa-solid fa-graduation-cap"></i></span><div><h4>Education</h4><p>B.Tech. Information Technology</p></div></article>
+            <article class="fact-card"><span class="fact-icon"><i class="fa-solid fa-code"></i></span><div><h4>Programming</h4><p>Java, Python, C</p></div></article>
+            <article class="fact-card"><span class="fact-icon"><i class="fa-solid fa-laptop-code"></i></span><div><h4>Web development</h4><p>HTML, CSS, JavaScript</p></div></article>
+            <article class="fact-card"><span class="fact-icon"><i class="fa-solid fa-database"></i></span><div><h4>Database</h4><p>MongoDB</p></div></article>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">MY BACKGROUND</span>
+          <h2>Education</h2>
+          <p>My academic journey so far.</p>
+        </div>
+        <div class="education-card">
+          <div class="education-icon"><i class="fa-solid fa-building-columns"></i></div>
+          <div>
+            <span class="card-kicker">CURRENTLY PURSUING</span>
+            <h3>B.Tech. Information Technology</h3>
+            <h4>Velalar College of Engineering and Technology</h4>
+            <p>Thindal, Erode, Tamil Nadu · Autonomous</p>
+            <span class="education-note">Second-year student</span>
+          </div>
+        </div>
+        <p class="small-note">School education details can be added when you provide the school name and completion years.</p>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">WHAT I WORK WITH</span>
+          <h2>Technical <span class="text-blue">Skills</span></h2>
+          <p>Technologies and tools I'm learning and using in my projects.</p>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card"><i class="fa-brands fa-html5"></i><h3>HTML</h3><p>Web structure</p></article>
+          <article class="skill-card"><i class="fa-brands fa-css3-alt"></i><h3>CSS</h3><p>Responsive styling</p></article>
+          <article class="skill-card"><i class="fa-brands fa-js"></i><h3>JavaScript</h3><p>Web interactivity</p></article>
+          <article class="skill-card"><i class="fa-brands fa-java"></i><h3>Java</h3><p>Programming</p></article>
+          <article class="skill-card"><i class="fa-brands fa-python"></i><h3>Python</h3><p>Programming</p></article>
+          <article class="skill-card"><i class="fa-solid fa-code"></i><h3>C</h3><p>Programming fundamentals</p></article>
+          <article class="skill-card"><i class="fa-solid fa-database"></i><h3>MongoDB</h3><p>Database basics</p></article>
+          <article class="skill-card"><i class="fa-brands fa-github"></i><h3>GitHub</h3><p>Code hosting</p></article>
+        </div>
+        <p class="small-note">Skills are presented without percentage ratings so they don't imply an unverified proficiency level.</p>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">WHAT I'VE BEEN BUILDING</span>
+          <h2>Featured <span class="text-blue">Projects</span></h2>
+          <p>Academic and practical projects I've explored.</p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-top"><span class="project-icon"><i class="fa-solid fa-pen-to-square"></i></span><span class="project-number">01</span></div>
+            <h3>Microblogging Website</h3>
+            <p>A simple social-style platform where users can create posts, follow people, and view a shared feed.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </article>
+          <article class="project-card">
+            <div class="project-top"><span class="project-icon"><i class="fa-solid fa-utensils"></i></span><span class="project-number">02</span></div>
+            <h3>Food Delivery Website</h3>
+            <p>A food ordering interface with menu selection, customer details, delivery address, and order total calculation.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </article>
+          <article class="project-card">
+            <div class="project-top"><span class="project-icon"><i class="fa-solid fa-store"></i></span><span class="project-number">03</span></div>
+            <h3>Classifieds Web Application</h3>
+            <p>A web application concept for users to advertise, buy, and sell pre-owned products.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </article>
+          <article class="project-card">
+            <div class="project-top"><span class="project-icon"><i class="fa-solid fa-calendar-check"></i></span><span class="project-number">04</span></div>
+            <h3>Automated Attendance System</h3>
+            <p>An attendance automation project focused on simplifying attendance tracking and record management.</p>
+            <div class="tags"><span>Python</span><span>Automation</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="research">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">EXPLORING NEW IDEAS</span>
+          <h2>Research & <span class="text-blue">Interests</span></h2>
+          <p>Areas I'm curious about and exploring.</p>
+        </div>
+        <article class="research-card">
+          <div class="research-symbol"><i class="fa-solid fa-shield-halved"></i></div>
+          <div>
+            <span class="card-kicker">RESEARCH TOPIC</span>
+            <h3>A Scalable and Intelligent Framework for Firewall Anomaly Resolution Using Machine Learning and Multi-Firewall Conflict Detection</h3>
+            <p>Exploring machine learning methods to identify firewall anomalies, detect conflicts across multiple firewalls, and support intelligent resolution approaches for improved network security.</p>
+            <div class="tags"><span>Machine Learning</span><span>Cybersecurity</span><span>Firewall</span><span>Network Security</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">SAY HELLO</span>
+          <h2>Get in <span class="text-blue">Touch</span></h2>
+          <p>Have a question, idea, or opportunity? I'd be happy to connect.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <a class="contact-item" href="mailto:prathishkthiyagarajan@gmail.com"><span><i class="fa-regular fa-envelope"></i></span><div><small>Email</small><strong>prathishkthiyagarajan@gmail.com</strong></div></a>
+            <a class="contact-item" href="tel:+918838090613"><span><i class="fa-solid fa-phone"></i></span><div><small>Phone</small><strong>+91 8838090613</strong></div></a>
+            <a class="contact-item" href="https://github.com/prathishkthiyagarajan-bot" target="_blank" rel="noopener noreferrer"><span><i class="fa-brands fa-github"></i></span><div><small>GitHub</small><strong>View my repositories</strong></div></a>
+            <a class="contact-item" href="https://www.linkedin.com/in/prathishk-thiyagarajan-626147322/" target="_blank" rel="noopener noreferrer"><span><i class="fa-brands fa-linkedin-in"></i></span><div><small>LinkedIn</small><strong>Connect with me</strong></div></a>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <label>Your name<input type="text" id="senderName" placeholder="Enter your name" required></label>
+              <label>Your email<input type="email" id="senderEmail" placeholder="Enter your email" required></label>
+            </div>
+            <label>Subject<input type="text" id="senderSubject" placeholder="What is this about?" required></label>
+            <label>Message<textarea id="senderMessage" rows="5" placeholder="Write your message..." required></textarea></label>
+            <button class="button button-primary" type="submit">Prepare email <i class="fa-regular fa-paper-plane"></i></button>
+            <p class="form-note" id="formNote" aria-live="polite">This form opens your email application; it does not send or store messages on this website.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#home">PT<span>.</span></a>
+      <p>Designed and developed by <strong>Prathishk Thiyagarajan</strong>.</p>
+      <p>© <span id="currentYear"></span> All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <script src="script.js"></script>
 </body>
-</html>S
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Prathishk Thiyagarajan, B.Tech Information Technology student and aspiring developer.">
+  <meta name="theme-color" content="#f5f8ff">
+  <title>Prathishk Thiyagarajan | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="#home">PT<span>.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="navLinks">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#research" class="nav-link">Research</a></li>
+        <li><a href="#contact" class="nav-link nav-contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="status-dot"></span> OPEN TO LEARNING & OPPORTUNITIES</span>
+          <h1>Hi, I'm <span class="text-blue">Prathishk<br class="desktop-break"> Thiyagarajan.</span></h1>
+          <h2 class="hero-role">I'm a <span id="typingText">B.Tech IT Student</span><span class="typing-cursor">|</span></h2>
+          <p class="hero-description">A technology enthusiast passionate about programming, web development, and intelligent solutions. I enjoy turning ideas into practical projects while continuously building my technical skills.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore my work <i class="fa-solid fa-arrow-right"></i></a>
+            <a class="button button-secondary" href="#contact">Get in touch</a>
+          </div>
+          <div class="social-links" aria-label="Social links">
+            <a href="https://github.com/prathishkthiyagarajan-bot" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/prathishk-thiyagarajan-626147322/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:prathishkthiyagarajan@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Decorative initials PT">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="initials-card">
+            <span class="initials">PT</span>
+            <span class="initials-caption">BUILD · LEARN · CREATE</span>
+          </div>
+          <span class="floating-chip chip-code"><i class="fa-solid fa-code"></i> Developer</span>
+          <span class="floating-chip chip-idea"><i class="fa-regular fa-lightbulb"></i> Curious mind</span>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#about"><span></span> Scroll to explore</a>
+    </section>
+
+    <section class="section section-soft" id="about">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">GET TO KNOW ME</span>
+          <h2>About <span class="text-blue">Me</span></h2>
+          <p>A little introduction and what motivates me.</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-copy">
+            <h3>Learning today. Building for tomorrow.</h3>
+            <p>I'm Prathishk Thiyagarajan, a B.Tech Information Technology student at Velalar College of Engineering and Technology, Thindal, Erode.</p>
+            <p>I'm interested in software development, web technologies, databases, machine learning, and cybersecurity. I enjoy learning by building projects and strengthening my problem-solving and programming fundamentals.</p>
+            <a class="text-link" href="#contact">Let's connect <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+          <div class="quick-facts">
+            <article class="fact-card"><span class="fact-icon"><i class="fa-solid fa-graduation-cap"></i></span><div><h4>Education</h4><p>B.Tech. Information Technology</p></div></article>
+            <article class="fact-card"><span class="fact-icon"><i class="fa-solid fa-code"></i></span><div><h4>Programming</h4><p>Java, Python, C</p></div></article>
+            <article class="fact-card"><span class="fact-icon"><i class="fa-solid fa-laptop-code"></i></span><div><h4>Web development</h4><p>HTML, CSS, JavaScript</p></div></article>
+            <article class="fact-card"><span class="fact-icon"><i class="fa-solid fa-database"></i></span><div><h4>Database</h4><p>MongoDB</p></div></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">MY BACKGROUND</span>
+          <h2>Education</h2>
+          <p>My academic journey so far.</p>
+        </div>
+        <div class="education-card">
+          <div class="education-icon"><i class="fa-solid fa-building-columns"></i></div>
+          <div>
+            <span class="card-kicker">CURRENTLY PURSUING</span>
+            <h3>B.Tech. Information Technology</h3>
+            <h4>Velalar College of Engineering and Technology</h4>
+            <p>Thindal, Erode, Tamil Nadu · Autonomous</p>
+            <span class="education-note">Second-year student</span>
+          </div>
+        </div>
+        <p class="small-note">School education details can be added when you provide the school name and completion years.</p>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">WHAT I WORK WITH</span>
+          <h2>Technical <span class="text-blue">Skills</span></h2>
+          <p>Technologies and tools I'm learning and using in my projects.</p>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card"><i class="fa-brands fa-html5"></i><h3>HTML</h3><p>Web structure</p></article>
+          <article class="skill-card"><i class="fa-brands fa-css3-alt"></i><h3>CSS</h3><p>Responsive styling</p></article>
+          <article class="skill-card"><i class="fa-brands fa-js"></i><h3>JavaScript</h3><p>Web interactivity</p></article>
+          <article class="skill-card"><i class="fa-brands fa-java"></i><h3>Java</h3><p>Programming</p></article>
+          <article class="skill-card"><i class="fa-brands fa-python"></i><h3>Python</h3><p>Programming</p></article>
+          <article class="skill-card"><i class="fa-solid fa-code"></i><h3>C</h3><p>Programming fundamentals</p></article>
+          <article class="skill-card"><i class="fa-solid fa-database"></i><h3>MongoDB</h3><p>Database basics</p></article>
+          <article class="skill-card"><i class="fa-brands fa-github"></i><h3>GitHub</h3><p>Code hosting</p></article>
+        </div>
+        <p class="small-note">Skills are presented without percentage ratings so they don't imply an unverified proficiency level.</p>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">WHAT I'VE BEEN BUILDING</span>
+          <h2>Featured <span class="text-blue">Projects</span></h2>
+          <p>Academic and practical projects I've explored.</p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-top"><span class="project-icon"><i class="fa-solid fa-pen-to-square"></i></span><span class="project-number">01</span></div>
+            <h3>Microblogging Website</h3>
+            <p>A simple social-style platform where users can create posts, follow people, and view a shared feed.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </article>
+          <article class="project-card">
+            <div class="project-top"><span class="project-icon"><i class="fa-solid fa-utensils"></i></span><span class="project-number">02</span></div>
+            <h3>Food Delivery Website</h3>
+            <p>A food ordering interface with menu selection, customer details, delivery address, and order total calculation.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </article>
+          <article class="project-card">
+            <div class="project-top"><span class="project-icon"><i class="fa-solid fa-store"></i></span><span class="project-number">03</span></div>
+            <h3>Classifieds Web Application</h3>
+            <p>A web application concept for users to advertise, buy, and sell pre-owned products.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </article>
+          <article class="project-card">
+            <div class="project-top"><span class="project-icon"><i class="fa-solid fa-calendar-check"></i></span><span class="project-number">04</span></div>
+            <h3>Automated Attendance System</h3>
+            <p>An attendance automation project focused on simplifying attendance tracking and record management.</p>
+            <div class="tags"><span>Python</span><span>Automation</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="research">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">EXPLORING NEW IDEAS</span>
+          <h2>Research & <span class="text-blue">Interests</span></h2>
+          <p>Areas I'm curious about and exploring.</p>
+        </div>
+        <article class="research-card">
+          <div class="research-symbol"><i class="fa-solid fa-shield-halved"></i></div>
+          <div>
+            <span class="card-kicker">RESEARCH TOPIC</span>
+            <h3>A Scalable and Intelligent Framework for Firewall Anomaly Resolution Using Machine Learning and Multi-Firewall Conflict Detection</h3>
+            <p>Exploring machine learning methods to identify firewall anomalies, detect conflicts across multiple firewalls, and support intelligent resolution approaches for improved network security.</p>
+            <div class="tags"><span>Machine Learning</span><span>Cybersecurity</span><span>Firewall</span><span>Network Security</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">SAY HELLO</span>
+          <h2>Get in <span class="text-blue">Touch</span></h2>
+          <p>Have a question, idea, or opportunity? I'd be happy to connect.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <a class="contact-item" href="mailto:prathishkthiyagarajan@gmail.com"><span><i class="fa-regular fa-envelope"></i></span><div><small>Email</small><strong>prathishkthiyagarajan@gmail.com</strong></div></a>
+            <a class="contact-item" href="tel:+918838090613"><span><i class="fa-solid fa-phone"></i></span><div><small>Phone</small><strong>+91 8838090613</strong></div></a>
+            <a class="contact-item" href="https://github.com/prathishkthiyagarajan-bot" target="_blank" rel="noopener noreferrer"><span><i class="fa-brands fa-github"></i></span><div><small>GitHub</small><strong>View my repositories</strong></div></a>
+            <a class="contact-item" href="https://www.linkedin.com/in/prathishk-thiyagarajan-626147322/" target="_blank" rel="noopener noreferrer"><span><i class="fa-brands fa-linkedin-in"></i></span><div><small>LinkedIn</small><strong>Connect with me</strong></div></a>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <label>Your name<input type="text" id="senderName" placeholder="Enter your name" required></label>
+              <label>Your email<input type="email" id="senderEmail" placeholder="Enter your email" required></label>
+            </div>
+            <label>Subject<input type="text" id="senderSubject" placeholder="What is this about?" required></label>
+            <label>Message<textarea id="senderMessage" rows="5" placeholder="Write your message..." required></textarea></label>
+            <button class="button button-primary" type="submit">Prepare email <i class="fa-regular fa-paper-plane"></i></button>
+            <p class="form-note" id="formNote" aria-live="polite">This form opens your email application; it does not send or store messages on this website.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#home">PT<span>.</span></a>
+      <p>Designed and developed by <strong>Prathishk Thiyagarajan</strong>.</p>
+      <p>© <span id="currentYear"></span> All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <script src="script.js"></script>
+</body>
+</html>
